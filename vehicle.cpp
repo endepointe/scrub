@@ -7,9 +7,8 @@ Vehicle::Vehicle() {
 	sponsor = "";
 }
 
-Vehicle *Vehicle::Vehicle(Vehicle &v) {
+Vehicle::Vehicle(Vehicle &v) {
 	sponsor = v.sponsor;
-	return *this;
 }
 		
 Vehicle::~Vehicle() {

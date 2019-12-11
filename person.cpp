@@ -31,12 +31,14 @@ string Person::getName() {
 }
 
 
-void Person::addVehicle(int count) {
+void Person::addVehicles(int count) {
 
 	Vehicle *newVehicles = new Vehicle[count];
+	string s;
 
 	for (int i = 0; i < count; ++i) {
-		cout << "add vehicle name" << endl;
+		cout << "enter sponsor: ";
+		cin >> s;
 	}
 
 	vehicles =  newVehicles;
@@ -51,3 +53,5 @@ Person &Person::operator=(Person &p) {
 	name = p.name;
 	return *this;
 }
+
+

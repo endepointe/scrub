@@ -20,7 +20,7 @@ class Person {
 		void setName(string);
 		string getName();
 
-		void addVehicle(int);
+		void addVehicles(int);
 		Vehicle *getVehicles();	
 
 		Person& operator=(Person &);

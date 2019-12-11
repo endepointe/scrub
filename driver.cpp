@@ -6,6 +6,7 @@ using namespace std;
 
 void printPersonInfo(Person p) {
 	cout << "person info" << endl;
+	cout << "Name: " << p.getName() << endl;
 }
 
 int main() {
@@ -24,7 +25,9 @@ int main() {
 
 	cin >> num;
 
-	p.addVehicle(num);
+	p.addVehicles(num);
+
+	printPersonInfo(p);
 
 	return 0;  
 
